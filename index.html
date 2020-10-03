@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Weather Dashboard</h1>
+                <p class="lead">Find the latest weather forcast in your area and other cities</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="city-form">
+                        <label for="city-input">Search for a City</label>
+                        <input type="text" id="movie-input">
+                  
+                        <!-- This button will trigger our AJAX call -->
+                        <input id="find-city" type="submit" value="City Search">
+                      </form>
+
+                </div>
+
+                <div class="col-md-8">
+                    <div id="weather-forcast">
+                        <div class="card" style="width: auto;">
+                            <div class="card-header">
+                                Name of City (date)
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <ul class="current-weather" id="current-temp">Temp: </ul>
+                                <ul class="current-weather" id="current-humidity">Humidity: </ul>
+                                <ul class="current-weather" id="current-windspeed">Windspeed: </ul>
+                                <ul class="current-weather" id="current-UVindex">UV index: </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
